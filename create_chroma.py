@@ -9,7 +9,7 @@ chroma_client = PersistentClient(path="news_chroma_db")  # 이 경로에 DB가 �
 collection = chroma_client.get_or_create_collection(name="news_articles")
 
 # 3. JSON 파일 로드
-with open("sports_news.json", "r", encoding="utf-8") as f:
+with open("news_data.json", "r", encoding="utf-8") as f:
     news_data = json.load(f)
 
 # 4. 데이터 삽입
